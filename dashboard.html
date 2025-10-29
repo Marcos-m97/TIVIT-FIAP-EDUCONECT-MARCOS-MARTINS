@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConnect - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+  <div class="dashboard">
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🎓 EduConnect</h2>
+        <p class="subtitle">Painel Administrativo</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a class="active" href="dashboard.html">🏠 Dashboard</a></li>
+          <li><a href="cadastro.html">🧍‍♂️ Cadastro</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="toggleTheme" class="toggle-theme">🌙 Modo Escuro</button>
+      </div>
+    </aside>
+
+    <!-- ===== Conteúdo ===== -->
+    <main class="content">
+      <h1>Pesquisar Aluno</h1>
+
+      <div class="search-box">
+        <input type="text" id="searchAluno" placeholder="Digite o nome ou matrícula do aluno...">
+        <button id="btnBuscar">🔍 Buscar</button>
+      </div>
+
+      <div id="listaResultados" class="tabela-alunos hidden">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Matrícula</th>
+              <th>CPF</th>
+              <th>Data de Nascimento</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaAlunosBody"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="footer">
+    © 2025 EduConnect | Desenvolvido por Equipe TIVIT Trainee 💻
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

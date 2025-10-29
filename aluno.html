@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConnect - Aluno</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aluno.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="dashboard">
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🎓 EduConnect</h2>
+        <p class="subtitle">Painel Administrativo</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">🏠 Dashboard</a></li>
+          <li><a href="cadastro.html">🧍‍♂️ Cadastro</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="toggleTheme" class="toggle-theme">🌙 Modo Escuro</button>
+      </div>
+    </aside>
+
+    <!-- ===== Conteúdo ===== -->
+    <main class="content">
+      <h1 id="tituloAluno">Carregando...</h1>
+
+      <section class="dados-aluno" id="dadosAluno"></section>
+
+      <section class="acoes">
+        <button id="btnEditarNotas">✏️ Atualizar Notas</button>
+        <button id="btnAdicionarEvento">📅 Adicionar Evento</button>
+        <button id="btnVoltar">⬅️ Voltar</button>
+      </section>
+
+      <section class="chart">
+        <h2>Desempenho</h2>
+        <canvas id="graficoAluno"></canvas>
+      </section>
+
+      <section class="eventos">
+        <h2>Eventos Cadastrados</h2>
+        <ul id="listaEventos"></ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="footer">
+    © 2025 EduConnect | Desenvolvido por Equipe TIVIT Trainee 💻
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/aluno.js"></script>
+</body>
+</html>
